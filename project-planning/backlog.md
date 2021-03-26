@@ -6,8 +6,13 @@ A collection of user stories you can choose from.  Stories inside of each priori
 
 > these are necessary for basic usability
 
-- [ ] As a ... I want to ... so that ...
-  - _Given [context] when [a specific action is performed] then [a set of consequences should occur]_
+### Route `/api/artists` - queries:
+
+- show tracks data
+
+### Route `/api/artist/id` - queries:
+
+- search artist by given id
 
 ## Should-Haves
 
