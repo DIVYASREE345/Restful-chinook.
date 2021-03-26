@@ -7,10 +7,37 @@
 
   <link rel="stylesheet" href="./style.css">
 
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <link rel="stylesheet" href="./style.css">
+
 </head>
 
 <body>
   <div id='root'></div>
+  <div class="container" style="margin-top: 8%;">
+    <div class="col-md-6 col-md-offset-3">     
+    <div class="row">
+    <div id="logo" class="text-center">
+    <h1>Find artist by id</h1><p></p>
+    </div>
+    <form role="form" id="form-1">
+    <div class="form-group">
+    <div class="input-group">
+    <input id="input-1" class="form-control" type="text" name="search" placeholder="Search by id" required/>
+    <span class="input-group-btn">
+    <button class="btn btn-success" type="submit" id="click-submit">
+    <i class="search-1" aria-hidden="true"></i> Search
+    </button>
+    </span>
+    </div>
+    </div>
+    </form>
+    <div class = "artist-list">
+
+    </div>
+    </div>            
+    </div>
+    </div>
 
   <script src='./app/init.js'></script>
 </body>
