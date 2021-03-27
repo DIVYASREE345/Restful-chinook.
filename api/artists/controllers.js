@@ -24,8 +24,20 @@ const controllers = {
       res.json(rows);
     })
    },
-  create: (req, res) => {
+   create: (req, res) => {
     // read row data from body
+    const { Name } = req.body;
+    // console.log(Name)
+    const queryString = `INSERT INTO Artists (Name)
+                        VALUES ("${Name}")`;
+
+    db.run(queryString, [], function (err, rows) {
+      if (err) {
+        res.status(400).json({ error: err.message });
+        return 
+      }
+      res.status(201).json("Artist added succesfully");
+    });
   },
   update: (req, res) => {
     // read row data from body
