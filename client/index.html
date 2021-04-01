@@ -3,18 +3,47 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>courses web-app</title>
-
+  <title>The play list</title>
+  <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
   <link rel="stylesheet" href="./style.css">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
   <link rel="stylesheet" href="./style.css">
 
 </head>
 
 <body>
-  <div id='root'></div>
-  <div class="container" style="margin-top: 8%;">
+  <div class="topnav">
+    <a href="#create-new">Create a new album</a>
+    <a href="#get-all-albums">All Albums</a>
+    
+    
+  </div>
+  <h1 id="heading">The Play-List</h1>
+  <div class="alignRow">
+    <div class="imageColumn">
+    <img src="./app/image/chinookbg.jpg" alt="music">
+    </div>
+  
+    <div class="search_wrap search_wrap_3">
+			<div class="search_box">
+        
+				<input type="text" class="input" placeholder="Search albums...">
+				<div class="btn btn_common">
+					<i class="fas fa-search"></i>
+				</div>
+			</div>
+		</div>
+  </div>
+    
+  <section id="get-all-albums">
+    
+  </section>
+  <section id="create-new">
+    
+  </section>
+   
+  <!--<div class="container" style="margin-top: 8%;">
     <div class="col-md-6 col-md-offset-3">
       <div class="row">
         <div id="logo" class="text-center">
@@ -48,7 +77,7 @@
       </div>
     </div>
   </div>
-
+-->
   <script type="module" src='./app/init.js'></script>
 </body>
 
